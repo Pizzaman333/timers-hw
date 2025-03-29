@@ -1,3 +1,48 @@
-h1 {
-    color: red;
+.box {
+    margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 60px;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+.big-timer-text {
+    text-align: center;
+    font-size: 48px
+}
+.small-timer {
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 400px;
+      height: 60px;
+      border-radius: 15px;
+      background-color: white;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      cursor: pointer;
+      transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1), margin 3000ms cubic-bezier(0.075, 0.82, 0.165, 1), background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+      font-size: 32px;
+}
+
+.small-timer:hover {
+   transform: scale(1.05);
+}
+
+
+@keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating {
+    margin-top: 180px;
+    animation: rotateAnimation 2s linear infinite;
+  }
+  
